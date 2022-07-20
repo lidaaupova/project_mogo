@@ -201,3 +201,103 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+
+/* Section */
+.section {
+    padding: 100px 0;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 955px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section__suptitle {
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 23px;
+}
+
+.section__title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 40px auto 0;
+}
+
+.section__text {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    margin-top: 45px;
+}
+
+/* About */
+.about {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    position: relative;
+    width: 380px;
+    background-color: #95e1d3;
+}
+
+.about__item:hover .about__descr{
+    opacity: 1;
+}
+
+.about__item:hover .about__img img{
+    opacity: .1;  
+}
+
+.about__img {
+    background-image: linear-gradient(0.0deg, rgba(252,227,138,0.89) 0%, rgba(243,129,129,0.89) 100%);
+}
+
+.about__item:hover .about__img {
+    /* transform: translateX(-10px) translateY(-10px); */
+    transform: translate3d(-10px, -10px, 0);
+    transition: transform .2s linear;
+}
+
+.about__img img {
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.about__descr {
+    width: 100%;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.about__descr p {
+    margin: 0;
+    margin-top: 9px;
+}
