@@ -379,3 +379,29 @@ hr {
     font-weight: 400;
     color: #999999;
 }
+
+/* Devices */
+
+.section--devices {
+    padding-bottom: 0;
+    background: url(../img/section_devices/bg_devices.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.devices {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices__item {
+    display: block;
+}
+
+.devices__item--phone {
+    position: absolute;
+    bottom: -91px;
+    left: 362px;
+    z-index: 1;
+}
