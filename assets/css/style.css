@@ -405,3 +405,75 @@ hr {
     left: 362px;
     z-index: 1;
 }
+
+/* WE Do */
+
+.wedo {
+    display: flex;
+}
+
+.wedo__item {
+    width: 50%;
+}
+
+/* Accordion */
+
+.accordion__item {
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+
+}
+
+.accordion__header {
+    position: relative;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+}
+
+.accordion__header::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 3px solid #cccccc;
+    border-right: 3px solid #cccccc;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg);
+
+}
+
+.accordion__title {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.accordion__content {
+    padding: 21px 55px 28px 20px;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+    margin: 0;
+    display: none;
+}
+
+.accordion__content.active {
+    display: block;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+
+
+.section--gray {
+    background-color: #f8f8f8;
+}
