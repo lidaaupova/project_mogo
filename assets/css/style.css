@@ -471,9 +471,82 @@ hr {
     border-top: 1px solid #e5e5e5;
 }
 
-
-
+/* Reviews */
 
 .section--gray {
     background-color: #f8f8f8;
+}
+
+.reviews {
+    padding: 0 110px;
+    position: relative;
+}
+
+.reviews__item {
+    padding-left: 210px;
+    position: relative;
+}
+
+.reviews__photo {
+    padding: 45px 43px 44px 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: 3px solid #95e1d3;
+}
+
+.reviews__text {
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+
+.reviews__author {
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.reviews__author::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-right: 10px;
+}
+
+.reviews__btn {
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.reviews__btn::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 3px solid #cccccc;
+    border-left: 3px solid #cccccc;
+    
+}
+
+.reviews__btn--prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.reviews__btn--next {
+    right: 0;
+    transform: rotate(135deg);
 }
