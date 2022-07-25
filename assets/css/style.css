@@ -213,7 +213,7 @@ hr {
 
 /* Section */
 .section {
-    padding: 100px 0;
+    padding: 90px 0;
 }
 
 .section__header {
@@ -254,9 +254,13 @@ hr {
     margin-top: 45px;
 }
 
+.section__text p {
+    margin: 0;
+}
+
 /* Card */
 .card {
-    margin-top: 100px;
+    margin-top: 90px;
     display: flex;
     justify-content: space-between;
 }
@@ -497,7 +501,8 @@ hr {
 /* Reviews */
 
 .section--gray {
-    background-color: #f8f8f8;
+    padding: 60px 0;
+    background-color: #f6f6f6;
 }
 
 .reviews {
@@ -602,4 +607,13 @@ hr {
 .social__icon:hover {
     color: #fff;
     background-color: #f38181;
+}
+
+
+/* Logos */
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
