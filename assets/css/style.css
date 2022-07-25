@@ -254,43 +254,46 @@ hr {
     margin-top: 45px;
 }
 
-/* About */
-.about {
+/* Card */
+.card {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
 }
 
-.about__item {
-    position: relative;
+.card__item {
     width: 380px;
-    background-color: #95e1d3;
 }
 
-.about__item:hover .about__descr{
+.card__inner {
+    background-color: #95e1d3;
+    position: relative;
+}
+
+.card__inner:hover .card__descr{
     opacity: 1;
 }
 
-.about__item:hover .about__img img{
+.card__inner:hover .card__img img{
     opacity: .1;  
 }
 
-.about__img {
+.card__img {
     background-image: linear-gradient(0.0deg, rgba(252,227,138,0.89) 0%, rgba(243,129,129,0.89) 100%);
 }
 
-.about__item:hover .about__img {
+.card__inner:hover .card__img {
     /* transform: translateX(-10px) translateY(-10px); */
     transform: translate3d(-10px, -10px, 0);
     transition: transform .2s linear;
 }
 
-.about__img img {
+.card__img img {
     display: block;
     transition: opacity .2s linear;
 }
 
-.about__descr {
+.card__descr {
     width: 100%;
     color:#fff;
     text-transform: uppercase;
@@ -306,9 +309,29 @@ hr {
     transition: opacity .2s linear;
 }
 
-.about__descr p {
+.card__descr p {
     margin: 0;
     margin-top: 9px;
+}
+
+.card__info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card__name {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.card__prof {
+    margin-top: 11px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
 }
 
 /* Statictics */
@@ -549,4 +572,34 @@ hr {
 .reviews__btn--next {
     right: 0;
     transform: rotate(135deg);
+}
+
+/* Social */
+.social {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social__icon {
+    display: block;
+    background-color: #fce38a;
+    width: 56px;
+    height: 56px;
+    border-right: 1px solid #fac788;
+    text-align: center;
+    padding-top: 13px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #f38181;
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.social__icon:last-child {
+    border: none;
+}
+
+.social__icon:hover {
+    color: #fff;
+    background-color: #f38181;
 }
