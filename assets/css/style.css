@@ -579,6 +579,20 @@ hr {
     transform: rotate(135deg);
 }
 
+.reviews__second {
+    padding: 0 65px;
+}
+
+.reviews__avatar {
+    padding-left: 250px;
+}
+
+.reviews__avatar .reviews__photo {
+    border: none;
+    padding: 0;
+    top: -20px;
+}
+
 /* Social */
 .social {
     display: flex;
