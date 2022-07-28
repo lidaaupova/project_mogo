@@ -120,7 +120,7 @@ hr {
     text-align: center;
 }
 
-.inro__suptitle {
+.intro__suptitle {
     font-family: 'Kaushan Script';
     font-size: 72px;
     font-weight: 400;
@@ -167,7 +167,7 @@ hr {
 }
 
 /* Slider */
-.inro__slider {
+.intro__slider {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1096,4 +1096,129 @@ hr {
 
 .copyright span {
     color: #f38181;
+}
+
+/* Media */
+@media (max-width: 1200px) { 
+    .section {
+        padding: 80px 0;
+    }
+    .container {
+        max-width: 1140px;
+    }
+    .intro__suptitle {
+        font-size: 60px;
+    }
+    .intro__title {
+        font-size: 120px;
+    }
+    .card {
+        margin-top: 60px;
+    }
+    .card__item {
+        width: auto;
+    }
+    .card__img img {
+        width: 360px;
+    }
+    .section--devices {
+        padding-bottom: 0;
+    }
+    .wedo {
+        justify-content: space-between;
+    }
+    .wedo__item{
+        width: 49%;
+    }
+    .wedo__item-img {
+        width: 100%;
+    }
+    .accordion__content {
+        padding: 13px 30px 16px 20px;
+    }
+    .blog__img {
+        width: 100%;
+    }
+    .blog__content::after {
+        width: 100%;
+    }
+    .section--map {
+        padding: 50px 0;
+    }
+    .footer__col--third {
+        width: 23.5%;
+    }
+    .section--gray {
+        padding: 50px 0;
+    }
+    .section_works {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .intro {
+        min-height: auto;
+    }
+    .intro__suptitle {
+        font-size: 45px;
+    }
+    .intro__title {
+        font-size: 90px;
+        line-height: normal;
+    }
+    .intro__title::after {
+        margin: 40px auto 50px;
+    }
+    .intro__slider {
+        margin-top: 140px;
+    }
+    .card__img img {
+        width: 305px;
+    }
+    .stat__item {
+        padding: 50px 30px;
+    }
+    .stat__count {
+        font-size: 60px;
+    }
+    .stat__text {
+        margin-top: 15px;
+    }
+    .reviews__photo {
+        padding: 40px 37px 37px 37px;
+    }
+    .reviews__text {
+        font-size: 20px;
+    }
+    .reviews__author {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+    .section--clients {
+        padding: 35px;
+    }
+    .blog__text {
+        font-size: 13px;
+    }
+    .reviews__avatar .reviews__photo {
+        width: 180px;
+    }
+    .footer__text {
+        font-size: 14px;
+    }
+    .footer__col--third {
+        width: 28%;
+    }
+    .blogs__title {
+        font-size: 10px;
+        line-height: auto;
+    }
+    .blogs__date {
+        margin-top: 5px;
+        font-size: 9px;
+    }
 }
