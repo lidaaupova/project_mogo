@@ -113,9 +113,9 @@ hr {
     background-size: cover;
 }
 
-.into__inner {
-    /* width: 100%; */
-    width: 850px;
+.intro__inner {
+    width: 100%;
+    /* width: 850px; */
     margin: 0 auto;
     text-align: center;
 }
@@ -698,6 +698,7 @@ hr {
 /* Clients */
 .section--clients {
     background: url(../img/clients/bg_clients.jpg) center no-repeat;
+    background-size: cover;
     padding: 90px 0 50px 0;
 }
 
@@ -855,6 +856,7 @@ hr {
 /* Map */
 .section--map {
     background: url('../img/bg_map.jpg') center no-repeat;
+    background-size: cover;
     padding: 52px 0;
 }
 
@@ -1198,9 +1200,9 @@ hr {
         font-size: 20px;
         margin-top: 12px;
     }
-    .section--clients {
+    /* .section--clients {
         padding: 35px;
-    }
+    } */
     .blog__text {
         font-size: 13px;
     }
@@ -1220,5 +1222,194 @@ hr {
     .blogs__date {
         margin-top: 5px;
         font-size: 9px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .section--devices, .section_works {
+        padding-bottom: 0;
+    }
+    /* .section--clients {
+        padding: 35px;
+    } */
+    .section__suptitle {
+        font-size: 18px;
+    }
+    .section__title {
+        font-size: 23px;
+        margin-top: 18px;
+    }
+    .section__title::after {
+        margin: 25px auto 0;
+    }
+    .section__text {
+        font-size: 13px;
+        margin-top: 30px;
+    }
+    .nav {
+        font-size: 12px;
+    }
+    .nav__link {
+        margin: 0 15px;
+    }
+    .nav__link:last-child {
+        margin: 0 0 0 15px;
+    }
+    .intro__suptitle {
+        font-size: 40px;
+    }
+    .intro__title {
+        font-size: 55px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .slider__item {
+        width: 21%;
+        font-size: 15px;
+    }
+    .slider__item:first-child::before {
+        width: 35%;
+    }
+    .slider__num {
+        font-size: 20px;
+    }
+    .card {
+        margin-top: 0;
+    }
+    .card__descr {
+        font-size: 12px;
+    }
+    .card__descr img {
+        width: 11%;
+    }
+    .card__img img {
+        width: 230px;
+    }
+    .card__info {
+        margin-top: 20px;
+    }
+    .card__name {
+        font-size: 13px;
+    }
+    .card__prof {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+    .stat__item {
+        padding: 40px 20px;
+    }
+    .stat__count {
+        font-size: 40px;
+    }
+    .stat__text {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    .services__item {
+        padding-left: 80px;
+        padding-right: 5px;
+    }
+    .services__icon {
+        left: 20px;
+    }
+    .services__title {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .services__text {
+        font-size: 12px;
+    }
+    .devices {
+        max-width: 420px;
+    }
+    .devices__item {
+        width: 85%;
+    }
+    .devices__item--phone {
+        width: 180px;
+        bottom: -57px;
+        left: 270px;
+    }
+    .accordion__title {
+        font-size: 12px;
+    }
+    .accordion__content {
+        font-size: 12px;
+    }
+    .accordion__header {
+        padding: 10px 12px;
+    }
+    .accordion__header::after {
+        width: 12px;
+        height: 12px;
+    }
+    .accordion__icon {
+        width: 6%;
+    }
+    .reviews__item {
+        padding-left: 160px;
+    }
+    .reviews__photo {
+        width: 22%;
+        padding: 5%;
+    }
+    .reviews__text {
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .reviews__author {
+        font-size: 13px;
+    }
+    .reviews__author::before {
+        width: 40px;
+        height: 2px;
+    }
+    .reviews__avatar .reviews__photo {
+        top: -10px;
+        width: 125px;
+    }
+    .logos img {
+        width: 12%;
+    }
+    .clients__item {
+        padding: 0 5px 0 145px;
+        margin-bottom: 50px;
+    }
+    .clients__img {
+        width: 25%;
+        left: 20px;
+    }
+    .clients__descr {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .map__title a {
+        font-size: 20px;
+    }
+    .footer__inner {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .footer__col--first {
+        width: 80%;
+    }
+    .footer__col--second {
+        width: 42%;
+        margin-top: 40px;
+    }
+    .footer__col--third {
+        margin-top: 40px;
+        width: 37%;
+    }
+    .copyright {
+        padding: 20px 0;
+        font-size: 11px;
     }
 }
