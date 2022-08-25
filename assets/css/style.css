@@ -1117,6 +1117,10 @@ hr {
 
 /* Media */
 @media (max-width: 1200px) { 
+    /* Nav */
+    .nav {
+        font-size: 16px;
+    }
     /* Section */
     .section {
         padding: 80px 0;
@@ -1164,27 +1168,25 @@ hr {
         width: 100%;
     }
     .blog__text {
-        font-size: 12px;
-    }
-    /* Footer */
-    .footer__text {
         font-size: 14px;
     }
-    .blogs__title, .blogs__date {
-        font-size: 10px;
-    }
+    /* Footer */
     .footer__col--third {
-        width: 28.5%;
+        width: auto;
+    }
+    .instagram {
+        width: 269px;
     }
     .instagram__item img {
-        width: 8.8vw;
+        width: auto;
+        height: auto;
     }
 }
 
 @media (max-width: 992px) {
     /* Nav */
     .nav {
-        font-size: 12px;
+        font-size: 13px;
     }
     .nav__link {
         margin: 0 22px;
@@ -1220,7 +1222,7 @@ hr {
         font-size: 20px;
     }
     .slider__item:first-child:before {
-        width: 30%;
+        width: 40%;
     }
     /* Section */
     .section {
@@ -1244,23 +1246,22 @@ hr {
         margin: 35px auto 0;
     }
     /* Card */
-    .card__descr {
-        font-size: 13px;
+    .card {
+        flex-wrap: wrap;
+        width: 50%;
+        margin: 0 auto;
     }
-    .card__descr img {
-        width: 11%;
+    .card__item {
+        margin-bottom: 15px;
     }
-    .card__name {
-        font-size: 12px;
+    .card__item:last-child {
+        margin-bottom: 0;
+    }
+    .card__info {
+        margin-top: 14px;
     }
     .card__prof {
-        font-size: 13px;
-    }
-    .social__icon {
-        width: 45px;
-        height: 45px;
-        padding-top: 11px;
-        font-size: 20px;
+        margin-top: 6px;
     }
     /* Stat */
     .stat__item {
@@ -1271,24 +1272,24 @@ hr {
     }
     .stat__text {
         margin-top: 15px;
-        font-size: 11px;
     }
     /* Reviews */
     .reviews {
-        padding: 0 70px;
+        padding: 0 50px;
     }
     .reviews__item {
-        padding-left: 180px;
+        padding-left: 150px;
     }
     .reviews__photo {
-        width: 18vh;
+        width: 110px;
         padding: 30px 29px 31px 30px;
     }
     .reviews__text {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 24px;
     }
     .reviews__author {
-        font-size: 15px;
+        font-size: 16px;
         margin-top: 12px;
     }
     .reviews__author::before {
@@ -1296,7 +1297,7 @@ hr {
         height: 2px;
     }
     .reviews__avatar .reviews__photo {
-        width: 140px;
+        width: 120px;
         top: 0;
     }
     /* Devices */
@@ -1310,7 +1311,7 @@ hr {
     }
     /* Logos */
     .logos img {
-        width: 12%;
+        width: 15%;
     }
     /* Works */
     .works__title {
@@ -1327,28 +1328,19 @@ hr {
         padding: 0 40px 0 165px;
     }
     .clients__img {
-        width: 14vh;
-    }
-    .clients__descr {
-        font-size: 13px;
+        width: 95px;
     }
     /* Blog */
-    .blog__date {
-        width: 45px;
-        height: 55px;
-        font-size: 24px;
+    .blog {
+        flex-direction: column;
     }
-    .blog__date div {
-        font-size: 12px;
+    .blog__item {
+        width: 55%;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
-    .blog__title a {
-        font-size: 13px;
-    }
-    .blog__text {
-        font-size: 13px;
-    }
-    .blog__footer span {
-        font-size: 13px;
+    .blog__item:last-child {
+        margin-bottom: 0;
     }
     /* Map */
     .map__title a {
@@ -1360,36 +1352,29 @@ hr {
     /* Footer */
     .footer__inner {
         flex-wrap: wrap;
-    }
-    .footer__text {
-        font-size: 13px;
+        justify-content: space-around;
     }
     .footer__col--first {
-        width: 48%;
+        width: 80%;
     }
-    .footer__social-content {
-        font-size: 13px;
-    }
-    .footer__social-content a {
-        font-size: 14px;
+    .footer__logo {
+        font-size: 30px;
     }
     .footer__col--second {
         width: 47%;
+        margin-top: 40px;
     }
-    .blogs__title {
-        font-size: 10px;
-        line-height: normal;
-    }
-    .blogs__date {
-        margin-top: 5px;
-        font-size: 9px;
+    .blogs__item {
+        margin-bottom: 25px;
     }
     .footer__col--third {
-        margin-top: 25px;
-        width: 35%;
+        margin-top: 40px;
+    }
+    .instagram {
+        width: 275px;
     }
     .instagram__item img {
-        width: 11vw;
+        width: 90px;
     }
 }
 @media (max-width: 768px) {
@@ -1399,7 +1384,7 @@ hr {
     }
     /* Nav */
     .nav {
-        font-size: 10px;
+        font-size: 11px;
     }
     .nav__link {
         margin: 0 15px;
@@ -1415,10 +1400,10 @@ hr {
         padding-top: 190px;
     }
     .intro__suptitle {
-        font-size: 30px;
+        font-size: 33px;
     }
     .intro__title {
-        font-size: 40px;
+        font-size: 43px;
     }
     .intro__title::after {
         width: 45px;
@@ -1429,24 +1414,21 @@ hr {
     }
     /* Btn */
     .btn {
-        font-size: 10px;
-        padding: 10px 20px;
+        padding: 11px 22px;
         border: 2px solid #fff;
     }
     /* Slider */
     .slider__item {
-        width: 21%;
-        font-size: 11px;
+        font-size: 12px;
         padding: 13px 0;
         border-top: 2px solid #fff;
     }
     .slider__item:first-child::before {
-        width: 40%;
         height: 2px;
         top: -2px;
     }
     .slider__num {
-        font-size: 16px;
+        font-size: 17px;
     }
     /* Section */
     .section {
@@ -1461,55 +1443,45 @@ hr {
     .section__header {
         margin: 0 auto 40px;
     }
-    .section__suptitle {
-        font-size: 16px;
-    }
     .section__title {
-        font-size: 19px;
+        font-size: 23px;
         margin-top: 15px;
     }
     .section__title::after {
         margin: 23px auto 0;
     }
     .section__text {
-        font-size: 11px;
         margin-top: 25px;
     }
     /* Card */
     .card {
         margin-top: 0;
     }
-    .card__descr {
-        font-size: 10px;
-    }
-    .card__descr img {
-        width: 11%;
-    }
     .card__info {
         margin-top: 16px;
     }
     .card__name {
-        font-size: 10px;
+        font-size: 12px;
     }
     .card__prof {
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 7px;
     }
     .social__icon {
-        width: 30px;
-        height: 30px;
-        padding-top: 8px;
-        font-size: 14px;
+        width: 44px;
+        height: 44px;
+        padding-top: 9px;
+        font-size: 19px;
     }
     /* Stat */
     .stat__item {
-        padding: 25px 13px;
+        padding: 30px 13px;
     }
     .stat__count {
-        font-size: 30px;
+        font-size: 32px;
     }
     .stat__text {
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 10px;
     }
     /* Services */
@@ -1531,369 +1503,16 @@ hr {
     }
     .services__title {
         margin-bottom: 5px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .services__text {
-        font-size: 10px;
-        line-height: 20px;
+        font-size: 12px;
     }
     /* Hr */
     hr {
         width: 1px;
         height: 40vh;
         margin: 0 25px;
-    }
-    /* Devices */
-    .devices {
-        max-width: 300px;
-    }
-    .devices__item--phone {
-        width: 150px;
-        bottom: -45px;
-        left: 230px;
-    }
-    /* Accordion */
-    .accordion__header {
-        padding: 7px 10px;
-    }
-    .accordion__title {
-        font-size: 10px;
-    }
-    .accordion__content {
-        font-size: 10px;
-        padding: 8px 20px 10px 15px;
-    }
-    .accordion__content p {
-        margin: 0;
-    }
-    .accordion__header::after {
-        width: 10px;
-        height: 10px;
-        border-top: 2px solid #cccccc;
-        border-right: 2px solid #cccccc;
-    }
-    .accordion__icon {
-        width: 6%;
-    }
-    /* Reviews */
-    .reviews {
-        padding: 0 55px;
-    }
-    .reviews__btn::after {
-        width: 12px;
-        height: 12px;
-        border-top: 2px solid #cccccc;
-        border-left: 2px solid #cccccc;
-    }
-    .reviews__item {
-        padding-left: 130px;
-    }
-    .reviews__photo {
-        width: 80px;
-        padding: 20px
-    }
-    .reviews__text {
-        font-size: 11px;
-        line-height: 20px;
-    }
-    .reviews__author {
-        font-size: 11px;
-        margin-top: 6px;
-    }
-    .reviews__author::before {
-        width: 30px;
-        height: 1px;
-    }
-    .reviews__avatar .reviews__photo {
-        top: -10px;
-        width: 100px;
-    }
-    /* Works */
-    .works__info img {
-        width: 12%;
-    }
-    .works__title {
-        margin-top: 10px;
-        font-size: 9px;
-    }
-    .works__text {
-        margin-top: 5px;
-        font-size: 9px;
-    }
-    /* Clients */
-    .clients {
-        flex-direction: column;
-        margin-top: 55px;
-    }
-    .clients__item {
-        width: 90%;
-        margin: 0 auto;
-        padding: 0;
-        padding-left: 120px;
-        margin-bottom: 40px;
-    }
-    .clients__item:last-child {
-        margin-bottom: 0;
-    }
-    .clients__img {
-        left: 20px;
-        width: 12vh;
-    }
-    .clients__name, .clients__prof {
-        font-size: 12px;
-    }
-    .clients__prof::after {
-        width: 40px;
-        height: 1px;
-        margin: 15px 0;
-    }
-    .clients__descr {
-        font-size: 12px;
-        line-height: 20px;
-    }
-    /* Blog */
-    .blog__date {
-        width: 35px;
-        height: 45px;
-        font-size: 16px;
-    }
-    .blog__date div {
-        font-size: 10px;
-    }
-    .blog__title a {
-        font-size: 11px;
-    }
-    .blog__text {
-        font-size: 11px;
-        line-height: 20px;
-    }
-    .blog__content::after {
-        margin: 10px 0;
-    }
-    .blog__footer span, .blog__footer i {
-        font-size: 11px;
-    }
-    /* Map */
-    .map i {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .map__title a {
-        font-size: 16px;
-    }
-    .map__title::after {
-        width: 40px;
-    }
-    /* Footer */
-    .footer__inner {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .footer__col--first {
-        width: 80%;
-    }
-    .footer__title {
-        font-size: 11px;
-    }
-    .footer__logo {
-        font-size: 25px;
-    }
-    .footer__text {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 11px;
-        line-height: 20px;
-    }
-    .footer__social-header, .footer__social-content {
-        font-size: 11px;
-    }
-    .footer__social-header b {
-        font-size: 14px;
-    }
-    .footer__social-content a {
-        font-size: 12px;
-        margin-left: 20px;
-    }
-    .subscribe__input {
-        height: 30px;
-        font-size: 11px;
-    }
-    .subscribe__btn {
-        height: 30px;
-        font-size: 11px;
-        width: 30%;
-    }
-    .footer__col--second {
-        width: 47%;
-        margin-top: 40px;
-    }
-    .blogs__item {
-        margin-bottom: 25px;
-    }
-    .blogs__item img {
-        width: 100px;
-    }
-    .footer__col--third {
-        margin-top: 40px;
-        width: 37%;
-    }
-    .instagram__item img {
-        width: 11.5vw;
-    }
-    .instagram p {
-        font-size: 11px;
-    }
-    /* Copyright */
-    .copyright {
-        padding: 20px 0;
-        font-size: 11px;
-    }
-}
-
-@media (max-width: 576px) {
-    /* Header */
-    .header__logo {
-        font-size: 15px;
-    }
-    /* Nav */
-    .nav {
-        display: none;
-    }
-    /* Intro */
-    .intro {
-        padding-top: 100px;
-    }
-    .intro__suptitle {
-        font-size: 20px;
-    }
-    .intro__title {
-        font-size: 30px;
-        margin-top: 10px;
-    }
-    .intro__title::after {
-        width: 35px;
-        height: 1px;
-        margin: 15px auto 20px;
-    }
-    .intro__slider {
-        margin-top: 75px;
-    }
-    /* Btn */
-    .btn {
-        font-size: 8px;
-        padding: 7px 15px;
-    }
-    /* Slider */
-    .slider__item {
-        padding: 8px 0;
-        font-size: 8px;
-    }
-    .slider__num {
-        font-size: 11px;
-    }
-    /* Section */
-    .section {
-        padding: 30px 0;
-    }
-    .section--devices, .section_works {
-        padding-bottom: 0;
-    }
-    .section--gray, .section--map {
-        padding: 20px 0;
-    }
-    .section__header {
-        margin-bottom: 25px;
-    }
-    .section__suptitle {
-        font-size: 11px;
-    }
-    .section__title {
-        font-size: 13px;
-        margin-top: 10px;
-    }
-    .section__title::after {
-        width: 35px;
-        height: 1px;
-        margin: 18px auto;
-    }
-    .section__text {
-        font-size: 8px;
-        line-height: 14px;
-        margin-top: 0;
-    }
-    /* Card */
-    .card {
-        flex-wrap: wrap;
-        width: 50%;
-        margin: 0 auto;
-    }
-    .card__item {
-        margin-bottom: 10px;
-    }
-    .card__item:last-child {
-        margin-bottom: 0;
-    }
-    .card__descr {
-        font-size: 8px;
-    }
-    .card__descr p {
-        margin-top: 6px;
-    }
-    .card__info {
-        margin-top: 10px;
-    }
-    .card__name, .card__prof {
-        font-size: 8px;
-    }
-    .card__prof {
-        margin-top: 4px;
-    }
-    .social__icon {
-        width: 25px;
-        height: 25px;
-        padding-top: 5px;
-        font-size: 12px;
-    }
-    /* Stat */
-    .stat__item {
-        padding: 15px 2px;
-    }
-    .stat__count {
-        font-size: 17px;
-    }
-    .stat__text {
-        font-size: 8px;
-    }
-    /* Services */
-    .services__inner {
-        flex-wrap: wrap;
-    }
-    .services__item--first {
-        margin-top: 0;
-    }
-    .services__icon {
-        width: 20px;
-    }
-    .services__title {
-        margin-bottom: 5px;
-        font-size: 8px;
-    }
-    .services__text {
-        font-size: 8px;
-        line-height: 14px;
-    }
-    /* Hr */
-    hr {
-        display: none;
-    }
-    /* Devices */
-    .devices {
-        max-width: 180px;
-    }
-    .devices__item--phone {
-        width: 90px;
-        bottom: -25px;
-        left: 140px;
     }
     /* WeDo */
     .wedo {
@@ -1907,58 +1526,277 @@ hr {
         margin-top: 0;
     }
     /* Accordion */
-    .accordion__content {
-        font-size: 8px;
-        line-height: 14px;
-    }
-    .accordion__icon {
-        width: 11px;
-    }
-    .accordion__header::after {
-        width: 8px;
-        height: 8px;
-        border-top: 1px solid #cccccc;
-        border-right: 1px solid #cccccc;
+    .accordion__header {
+        padding: 7px 10px;
     }
     .accordion__title {
-        font-size: 8px;
+        font-size: 12px;
+    }
+    .accordion__content {
+        font-size: 11px;
+    }
+    .accordion__content p {
+        margin: 0;
+    }
+    .accordion__header::after {
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #cccccc;
+        border-right: 2px solid #cccccc;
+    }
+    .accordion__icon {
+        width: 17px;
     }
     /* Reviews */
     .reviews {
         padding: 0 30px;
     }
     .reviews__btn::after {
+        width: 12px;
+        height: 12px;
+        border-top: 2px solid #cccccc;
+        border-left: 2px solid #cccccc;
+    }
+    .reviews__item {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .reviews__photo {
+        display: block;
+        position: static;
+        width: 80px;
+        padding: 20px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .reviews__text {
+        font-size: 12px;
+    }
+    .reviews__author {
+        font-size: 13px;
+        margin-top: 6px;
+    }
+    .reviews__author::before {
+        width: 30px;
+        height: 1px;
+    }
+    .reviews__avatar .reviews__photo {
+        width: 100px;
+    }
+    /* Works */
+    .works {
+        flex-wrap: wrap;
+    }
+    .works__col {
+        flex: none;
+        width: 50%;
+    }
+    .works__info img {
+        width: auto;
+    }
+    /* Clients */
+    .clients {
+        flex-direction: column;
+        margin-top: 55px;
+    }
+    .clients__item {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        padding-left: 100px;
+        margin-bottom: 40px;
+    }
+    .clients__item:last-child {
+        margin-bottom: 0;
+    }
+    .clients__img {
+        left: 0px;
+        width: 75px;
+    }
+    .clients__name, .clients__prof {
+        font-size: 12px;
+    }
+    .clients__prof::after {
+        width: 40px;
+        height: 1px;
+        margin: 15px 0;
+    }
+    .clients__descr {
+        font-size: 12px;
+    }
+    /* Blog */
+    .blog__date {
+        width: 40px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .blog__date div {
+        font-size: 10px;
+    }
+    .blog__title a {
+        font-size: 12px;
+    }
+    .blog__text {
+        font-size: 12px;
+    }
+    .blog__content::after {
+        margin: 10px 0;
+    }
+    .blog__footer span, .blog__footer i {
+        font-size: 12px;
+    }
+    /* Map */
+    .map i {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .map__title a {
+        font-size: 16px;
+    }
+    .map__title::after {
+        width: 40px;
+    }
+    /* Footer */
+    .footer {
+        padding-top: 50px;
+    }
+    .footer__title {
+        font-size: 12px;
+    }
+    .footer__logo {
+        font-size: 25px;
+    }
+    .footer__text {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .footer__social-header, .footer__social-content {
+        font-size: 12px;
+    }
+    .footer__social-header b {
+        font-size: 15px;
+    }
+    .footer__social-content a {
+        font-size: 13px;
+        margin-left: 22px;
+    }
+    .subscribe__input {
+        padding: 0 0 0 10px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .subscribe__btn {
+        height: 30px;
+        font-size: 12px;
+    }
+    .blogs__item {
+        margin-bottom: 25px;
+    }
+    .blogs__item img {
+        width: 100px;
+    }
+    .blogs__title, .blogs__date {
+        font-size: 10px;
+        line-height: normal;
+    }
+    .instagram {
+        width: 228px;
+    }
+    .instagram__item img {
+        width: 75px;
+    }
+    .instagram p {
+        font-size: 12px;
+    }
+    /* Copyright */
+    .copyright {
+        padding: 15px 0;
+        font-size: 10px;
+    }
+}
+ 
+@media (max-width: 576px) {
+    /* Nav */
+    .nav {
+        display: none;
+    }
+    /* Intro */
+    .intro {
+        padding-top: 120px;
+    }
+    /* Slider */
+    .slider__num {
+        display: none;
+    }
+    /* Card */
+    .card {
+        width: 70%;
+    }
+    .card__descr {
+        font-size: 15px;
+    }
+    .card__descr img {
+        width: 25px;
+    }
+    /* Stat */
+    .stat {
+        flex-wrap: wrap;
+    }
+    /* Services */
+    .services__inner {
+        flex-wrap: wrap;
+    }
+    .services__item {
+        padding-left: 50px;
+    }
+    .services__item--first {
+        margin-top: 0;
+    }
+    .services__icon {
+        width: 25px;
+        left: 5px;
+    }
+    /* Hr */
+    hr {
+        display: none;
+    }
+    /* Devices */
+    .devices {
+        max-width: 210px;
+    }
+    .devices__item--phone {
+        width: 105px;
+        bottom: -32px;
+        left: 150px;
+    }
+    /* Accordion */
+    .accordion__header {
+        padding: 9px;
+    }
+    .accordion__header::after {
         width: 9px;
         height: 9px;
     }
-    .reviews__item {
-        padding-left: 75px;
+    /* Reviews */
+    .reviews__btn::after {
+        width: 10px;
+        height: 10px;
     }
     .reviews__photo {
-        width: 50px;
-        padding: 12px;
-        border: 1px solid #95e1d3;
-        margin-top: 5px;
-    }
-    .reviews__text {
-        font-size: 8px;
-        line-height: 14px;
-    }
-    .reviews__author {
-        font-size: 8px;
-        margin-top: 3px;
-    }
-    .reviews__author::before {
-        width: 20px;
-        margin-right: 7px;
+        width: 60px;
+        padding: 15px;
+        border: 2px solid #95e1d3;
     }
     .reviews__avatar .reviews__photo {
-        width: 58px;
+        width: 80px;
     }
-    /* Works */
-    .works__title, .works__text {
-        margin-top: 3px;
-        font-size: 6px;
+    /* Logos */
+    .logos {
+        flex-wrap: wrap;
+    }
+    .logos img {
+        width: 84px;
     }
     /* Clients */
     .clients {
@@ -1972,59 +1810,21 @@ hr {
         margin-bottom: 0;
     }
     .clients__img {
-        left: 10px;
-        width: 45px;
-    }
-    .clients__name, .clients__prof {
-        font-size: 8px;
+        width: 60px;
     }
     .clients__prof::after {
-        width: 25px;
-        margin: 10px 0;
-    }
-    .clients__descr {
-        font-size: 8px;
-        line-height: 14px;
+        margin: 13px 0;
     }
     /* Blog */
-    .blog {
-        flex-direction: column;
-    }
     .blog__item {
-        width: 55%;
-        margin: 0 auto;
-        margin-bottom: 15px;
-    }
-    .blog__item:last-child {
-        margin-bottom: 0;
-    }
-    .blog__date {
-        width: 30px;
-        height: 40px;
-        font-size: 15px;
-    }
-    .blog__date div, .blog__title a, .blog__footer i, .blog__footer span {
-        font-size: 8px;
-    }
-    .blog__text {
-        font-size: 8px;
-        line-height: 14px;
-        margin-top: 6px;
-    }
-    .blog__content::after {
-        margin: 8px 0 3px;
+        width: 70%;
     }
     /* Map */
     .map i{
-        font-size: 13px;
-        margin-bottom: 0;
-    }
-    .map__title a {
-        font-size: 10px;
+        font-size: 18px;
+        margin-bottom: 3px;
     }
     .map__title::after {
-        height: 1px;
-        width: 30px;
         margin-top: 10px;
     }
     /* Footer */
@@ -2039,70 +1839,39 @@ hr {
         width: 70%;
         margin: 0 auto;
     }
-    .footer__logo {
-        font-size: 15px;
-    }
-    .footer__text {
-        font-size: 8px;
-        margin-top: 12px;
-        margin-bottom: 12px;
-        line-height: 14px;
-    }
     .footer__social {
+        margin-bottom: 15px;
+    }
+    .footer__social-content a{
+        margin-right: 22px;
+        margin-left: 0;
+    }
+    .footer__social-content a:first-child {
+        margin-left: 22px;
+    }
+    .footer__social-content i{
         margin-bottom: 20px;
     }
-    .footer__social-header, .footer__social-content {
-        font-size: 8px;
-    }
-    .footer__social-header b {
-        font-size: 10px;
-    }
-    .footer__social-content a  {
-        font-size: 8px;
-        margin-left: 13px;
-    }
-    .subscribe__input {
-        height: 20px;
-        padding: 0 0 0 5px;
-        font-size: 8px;
-    }
-    .subscribe__btn {
-        height: 20px;
-        font-size: 7px;
-    }
     .footer__title {
-        font-size: 8px;
         margin-bottom: 20px;
     }
     .footer__col--second {
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .blogs__item {
         margin-bottom: 15px;
         align-items: flex-start;
     }
     .blogs__img img {
-        width: 75px;
-    }
-    .blogs__title, .blogs__date {
-        font-size: 7px;
+        width: 90px;
     }
     .footer__col--third {
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .instagram {
-        width: 59%;
+        width: 191px;
     }
     .instagram__item img {
-        width: 12.5vw;
-    }
-    .instagram p {
-        margin-top: 12px;
-        font-size: 8px;
-    }
-    /* Copyright */
-    .copyright {
-        padding: 10px 0;
-        font-size: 7px;
+        width: 63px;
     }
 }
