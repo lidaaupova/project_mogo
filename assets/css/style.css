@@ -55,6 +55,20 @@ hr {
     color: #ffffff;
 }
 
+.header.fixed {
+    position: fixed;
+    background-color: #e88f82;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+.header.active {
+    background-color: #e88f82;
+}
+
+/* Nav */
 .nav {
     font-size: 14px;
     text-transform: uppercase;
@@ -102,6 +116,75 @@ hr {
 
 .nav__link:last-child {
     margin: 0 0 0 27px;
+}
+
+/* Nav toggle */
+.nav-toggle {
+    width: 30px;
+    padding: 10px 0;
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    z-index: 1;
+
+    display: none;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-toggle.active .nav-toggle__item{
+    background: none;
+}
+
+.nav-toggle__item {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transition: background .2s linear;
+}
+
+.nav-toggle__item::after, .nav-toggle__item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    z-index: 1;
+
+    transition: transform .2s linear;
+} 
+
+.nav-toggle__item::after {
+    top: -8px;
+}
+
+.nav-toggle__item::before {
+    bottom: -8px;
+}
+
+.nav-toggle.active .nav-toggle__item::after {
+    transform: rotate(45deg); /*translateX(-3px);
+    transform-origin: left top;*/
+    top: 0;
+    right: 0;
+}
+
+.nav-toggle.active .nav-toggle__item::before {
+    transform: rotate(-45deg); /*translateX(-2px);
+    transform-origin: left bottom;*/
+    top: 0;
+    right: 0;
 }
 
 /* intro */
@@ -1717,9 +1800,33 @@ hr {
 }
  
 @media (max-width: 576px) {
+    /* Header */
+    .header {
+        padding: 15px 0;
+    }
     /* Nav */
     .nav {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #e88f82;
+        font-size: 14px;
+    }
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 12px 20px;
+    }
+    .nav__link::after {
+        top: 100%;
+    }
+    .nav__link:last-child {
+        margin: 0;
+    }
+    .nav-toggle {
+        display: block;
     }
     /* Intro */
     .intro {
