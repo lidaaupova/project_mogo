@@ -612,7 +612,7 @@ hr {
 }
 
 .reviews__item {
-    min-height: 111px;
+    /* min-height: 210px; */
     padding-left: 210px;
     position: relative;
 }
@@ -690,18 +690,19 @@ hr {
 }
 
 .reviews__avatar {
-    padding-left: 250px;
+    padding-left: 210px;
 }
 
 .reviews__avatar .reviews__photo {
     border: none;
     padding: 0;
-    top: -5px;
+    /* top: -5px; */
+    width: 162px;
 }
 
-.reviews__item.slick-slide {
-    min-height: 120px;
-}
+/* .reviews__item.slick-slide {
+    min-height: 210px;
+} */
 
 /* Social */
 .social {
