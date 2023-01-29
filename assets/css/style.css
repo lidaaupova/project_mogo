@@ -588,10 +588,10 @@ hr {
     display: none;
 }
 
-.accordion__item.active .accordion__content {
+/* .accordion__item.active .accordion__content {
     display: block;
     border-top: 1px solid #e5e5e5;
-}
+} */
 
 .accordion__item.active .accordion__header::after {
     transform: translateY(-50%) rotate(-45deg);
